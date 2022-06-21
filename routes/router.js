@@ -8,7 +8,7 @@ router.get('/',(req,res,next) => {
   res.send("API running");
 })
 
-router.post('/api',async(req,res)=>{
+router.post('/',async(req,res)=>{
 /* 
     let orderDetails= new orderList({
         orderNo: req.body.orderNo,

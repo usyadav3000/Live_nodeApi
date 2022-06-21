@@ -84,10 +84,11 @@ router.get('/orderList', async (req, res, next) => {
 
 router.get('/orderList/:id',async(req,res,next)=>{
   try{
+    const a=3;
     const OrderNo1=req.params.id;
     console.log(OrderNo1);
     const order=Number(OrderNo1);
-    
+
     //console.log(orderList.orderNo)
     const data = await orderList.aggregate([
     {$match:{orderNo:order}},

@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 const orderRouter=require('./routes/router');
 const articalRouter=require('./routes/artical_order');
 app.use('/order',orderRouter);
-//app.use('/artical',articalRouter);
+app.use('/artical',articalRouter);
 
 
 /**
